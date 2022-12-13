@@ -46,11 +46,8 @@ public class EmployeeTest {
 		@Test
 		@Order(2)
 		public void getEmpById() {
-<<<<<<< HEAD
+
 			Employee empById = employeeRepository.findById(33L);
-=======
-			Employee empById = employeeRepository.findById(42L);
->>>>>>> 7213cdcbb355ceccd84479d1f2a5519ded55f83c
 			assertEquals("Neeraj Yadav",empById.getName());
 		}
 		
@@ -58,12 +55,9 @@ public class EmployeeTest {
 		@Order(3)
 		@Transactional
 		public void updateEmployeeTest() {
-			
-<<<<<<< HEAD
+
 			Employee updateEmployee = employeeRepository.findById(33L);
-=======
-			Employee updateEmployee = employeeRepository.findById(42L);
->>>>>>> 7213cdcbb355ceccd84479d1f2a5519ded55f83c
+
 
 			updateEmployee.setEmail("neerajyadav1997@gmail.com");
 			employeeRepository.persist(updateEmployee);
@@ -76,11 +70,9 @@ public class EmployeeTest {
 		@Order(4)
 		@Transactional
 		public void deleteEmployee() {
-<<<<<<< HEAD
+
 			Employee employee = employeeRepository.findById(33L);
-=======
-			Employee employee = employeeRepository.findById(42L);
->>>>>>> 7213cdcbb355ceccd84479d1f2a5519ded55f83c
+
 
 			employeeRepository.delete(employee);
 			
